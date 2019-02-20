@@ -13,8 +13,6 @@
                   (lambda (i) (- (* 2 i) 1))
                   k))
 
-(tan-cf 1.0 6)
-(tan-cf 1.0 7)
-(tan-cf 1.0 8)
 (tan-cf 1.0 9)
-(tan-cf 1.0 10)
+(tan 1.0)
+
