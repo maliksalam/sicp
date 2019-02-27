@@ -14,12 +14,16 @@
 (define (+ a b)
   (lambda (f) (lambda (x) ((a f) ((b f) x)))))
 
+(define (to-integer cn)
+  ((cn add1) 0))
 
-((zero add1) 0)
-((one add1) 0)
-((two add1) 0)
-(((* two one) add1) 0)
-(((+ two one) add1) 0)
+  
+(to-integer zero)
+(to-integer one)
+(to-integer two)
+(to-integer (* one two))
+(to-integer (+ two one))
+
 
 #|
 Substituting to get an expression of one:
